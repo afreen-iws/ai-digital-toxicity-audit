@@ -90,9 +90,9 @@ class ContentRiskPredictor:
 
         # ------------- THRESHOLDS -------------
         # You can tweak these if needed after testing.
-        self.text_threshold = 0.6   # probability threshold for text branch
+        self.text_threshold = 0.8   # probability threshold for text branch
         self.image_threshold = 0.6  # probability threshold for image branch
-        self.multi_threshold = 0.6  # final threshold for multimodal fusion
+        self.multi_threshold = 0.8  # final threshold for multimodal fusion
 
     # ---------- UTILS ----------
     @staticmethod
