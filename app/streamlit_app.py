@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-from src.inference.predictor import ContentRiskPredictor
+from inference.predictor import ContentRiskPredictor
 
 
 # Load predictor once and cache it across reruns
@@ -119,3 +119,4 @@ elif mode == "Multimodal (Image + Text)":
             display_result(result)
     else:
         st.info("Please upload an image to run multimodal analysis.")
+
