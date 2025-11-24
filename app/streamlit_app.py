@@ -1,8 +1,9 @@
 import streamlit as st
 from PIL import Image
-
-from inference.predictor import ContentRiskPredictor
-
+import sys
+import os
+sys.path.append(os.path.abspath("."))  # Enable imports from src/
+from src.inference.predictor import ContentRiskPredictor
 
 # Load predictor once and cache it across reruns
 @st.cache_resource
@@ -119,4 +120,5 @@ elif mode == "Multimodal (Image + Text)":
             display_result(result)
     else:
         st.info("Please upload an image to run multimodal analysis.")
+
 
