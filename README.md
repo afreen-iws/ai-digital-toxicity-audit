@@ -3,7 +3,9 @@
 Multimodal AI System for Detecting Toxic / Hateful Content in Images, Text, and Memes
 
 **Live Demo** (Streamlit App): https://ai-digital-toxicity-audit.streamlit.app/
+
 **Supported Inputs**: Text 📝 | Image 🖼️ | Image + Text (Memes) 🎯
+
 **Model Type**: ML-based Multimodal Fusion (Vision Transformer + BERT)
 
 **Project Overview**
@@ -37,31 +39,7 @@ This model detects harmful intent even when:
 **Business Use Case**:
 This model can be used for content moderation, brand safety auditing, advertising screening, or policy compliance on Facebook, Instagram, TikTok, and YouTube.
 
- **Repository Structure**
-ai-digital-toxicity-audit/
-│
-├── app/
-│   └── streamlit_app.py          # Live demo UI
-│
-├── models/
-│   └── checkpoints/              # Trained model folders
-│
-├── notebooks/
-│   ├── 01_explore_dataset.ipynb  # Data loading & EDA
-│   ├── 02_text_baseline.ipynb    # BERT text model training
-│   ├── 03_image_baseline.ipynb   # ViT image model training
-│   └── 04_multimodal_fusion.ipynb# BERT + ViT fusion training
-│
-├── src/
-│   ├── data/                     # Data loading utils
-│   ├── training/                 # Training scripts
-│   ├── models/                   # Model architectures
-│   └── inference/               
-│       └── predictor.py          # Unified prediction logic
-│
-├── requirements.txt              # Dependencies
-├── README.md                     # 🔹 You are here
-└── .streamlit/                   # Streamlit configs
+
 
 **Dataset**
 | Feature | Description                                    |
